@@ -1,0 +1,35 @@
+ // sorting and adding without methods/ functions using arrayList
+{
+    
+    public static void main(String[] args)
+    {
+        // code for adding and sorting the member names 
+        // Creating an arrayList  to store member names 
+        // Adding the members ( 5 people can be added at once 
+        // size can be changed later on 
+       ArrayList<String > member= new ArrayList<String>();
+        Scanner order= new Scanner (System.in);
+        
+         for ( int i=0;i<5; i++)
+         {
+             System.out.println("Enter the name of the member:");
+             String name= order.nextLine();
+             member.add(name);
+         } 
+         // for loop to display the member's name 
+         for ( int m=0; m<5; m++)
+         {
+             System.out.println(" The member name is, "+ member.get(m));
+             
+        }
+        // code for sorting the names alphabetically. 
+        Collections.sort(member);
+        //  for loop to display the names alphabetically 
+        for ( int k=0; k<5; k++)
+        {
+        System.out.println(" Names that is sorted:"+member.get(k));
+        
+            }
+        
+    }
+}
